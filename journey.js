@@ -24,7 +24,7 @@ routerJourney.get("/get",async(req,res)=>{
     const {userID}=req.body;
 
     try {
-        const bookings=await JourneyModel.find({userID:userID});
+        const bookings=await JourneyModel.find({_id:userID});
         res.send({bookings:bookings});
     } catch (error) {
         res.send({msg:"error"});
