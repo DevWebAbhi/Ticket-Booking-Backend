@@ -21,7 +21,7 @@ routerJourney.post("/post",async(req,res)=>{
 })
 
 routerJourney.get("/get",async(req,res)=>{
-    const {userID}=req.body;
+    const {userID}=req;
 
     try {
         const bookings=await JourneyModel.find({_id:userID});
