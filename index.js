@@ -45,6 +45,33 @@ app.use("/journey",auth,routerJourney);
 
 
 
+app.get("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
+
+app.post("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
+
+app.put("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
+
+app.patch("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
+
+app.delete("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
+
+app.head("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
+
+app.options("*",(req,res)=>{
+    res.send({msg:"page Not Found"});
+})
 
 
 app.listen(PORT,async()=>{
