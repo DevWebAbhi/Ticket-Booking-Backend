@@ -9,7 +9,7 @@ const {routerAccount} = require("./accounts");
 const {UserModel}=require("./userModel");
 const {routerJourney}=require("./journey");
 var jwt = require('jsonwebtoken');
-
+app.use(cors()); 
 
 app.use(express.json());
 app.get("/",(req,res)=>{
